@@ -1,0 +1,43 @@
+/* .bclear.css */
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 30px;
+}
+html{
+  background-color: pink;
+}
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: darkgreen;
+  text-align: center;
+}
+
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+}
