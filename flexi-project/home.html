@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Foundation - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="home.html" class="nav-logo">
+        <div class="nav-logo-icon">🌟</div>
+        <span>Hope Foundation</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="home.html" class="nav-link active">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="donate.html" class="nav-link">Donate</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><button class="logout-button" onclick="logout()">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page Content -->
+  <div class="page-content active">
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Transform Lives Together</h1>
+        <p>Join us in making a meaningful impact in communities worldwide</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="window.location.href='donate.html'">Make a Donation</button>
+          <button class="btn-secondary" onclick="window.location.href='projects.html'">View Projects</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="features-grid">
+      <div class="feature-box">
+        <div class="feature-box-icon">📚</div>
+        <h3>Education</h3>
+        <p>Empowering futures through quality education and learning opportunities for all.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-box-icon">🏥</div>
+        <h3>Healthcare</h3>
+        <p>Providing essential medical services and health programs to underserved communities.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-box-icon">🍽️</div>
+        <h3>Nutrition</h3>
+        <p>Fighting hunger and malnutrition with sustainable food security programs.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-box-icon">🌱</div>
+        <h3>Environment</h3>
+        <p>Creating a sustainable future through environmental conservation initiatives.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

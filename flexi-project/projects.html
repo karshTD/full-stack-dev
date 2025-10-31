@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Foundation - Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="home.html" class="nav-logo">
+        <div class="nav-logo-icon">🌟</div>
+        <span>Hope Foundation</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="donate.html" class="nav-link">Donate</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><button class="logout-button" onclick="logout()">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Projects Page Content -->
+  <div class="page-content active">
+    <div class="page-header">
+      <h1>Our Projects</h1>
+      <p>Discover the initiatives changing lives around the world</p>
+    </div>
+
+    <div class="projects-section">
+      <div class="add-project-form">
+        <h3>Add New Project</h3>
+        <form id="addProjectForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Project Name</label>
+              <input type="text" id="projectName" required>
+            </div>
+            <div class="form-field">
+              <label>Category</label>
+              <select id="projectCategory" required>
+                <option value="">Select Category</option>
+                <option value="Education">Education</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Nutrition">Nutrition</option>
+                <option value="Environment">Environment</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Description</label>
+            <textarea id="projectDescription" required></textarea>
+          </div>
+          <button type="submit" class="submit-form-btn">Add Project</button>
+        </form>
+      </div>
+
+      <div class="controls-bar">
+        <input type="text" class="search-input" id="searchProjects" placeholder="🔍 Search projects...">
+        <button class="control-btn" onclick="filterProjects('all')">All</button>
+        <button class="control-btn" onclick="filterProjects('Education')">Education</button>
+        <button class="control-btn" onclick="filterProjects('Healthcare')">Healthcare</button>
+        <button class="control-btn" onclick="filterProjects('Nutrition')">Nutrition</button>
+        <button class="control-btn" onclick="filterProjects('Environment')">Environment</button>
+        <button class="control-btn" onclick="sortProjects()">Sort A-Z</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
